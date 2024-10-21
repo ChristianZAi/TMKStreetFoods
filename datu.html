@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PNG Cover Page</title>
+  <title>PAKPIK SECRET FILES</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url('/datu.png'); /* Assuming image.png is in the root directory */
-      background-size: cover;
+      background-image: url('https://raw.githubusercontent.com/ChristianZAi/TMKStreetFoods/refs/heads/main/datu.png');
+      background-size: 100%;
       background-position: center;
+      background-repeat: no-repeat;
       height: 100vh;
+      position: relative; /* Added to create a relative container for the text */
+    }
+    
+    .top-text {
+      position: absolute;
+      top: 10%; /* Adjust this value to position the text at the desired height */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 26px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <div class="top-text">PAKPIK SECRET FILES</div>
 </body>
 </html>

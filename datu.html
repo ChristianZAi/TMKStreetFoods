@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script>document.addEventListener('contextmenu', function(event) {event.preventDefault();});</script>
+   <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+   <!-- Include the anti-inspect-element script -->
+   <script src="anti-inspect-element.js"></script>
+   <script src="inpect.jsS"></script>
   <title>PAKPIK SECRET FILES</title>
   <style>
     body {
@@ -12,17 +17,33 @@
       background-repeat: no-repeat;
       height: 100vh;
       position: relative; /* Added to create a relative container for the text */
+      animation: colorChange  2.5s infinite; /* Animation for color change */
     }
-    
+
+    @keyframes colorChange {
+      0% { background-color: red; }
+      10% { background-color: orange; }
+      20% { background-color: yellow; }
+      30% { background-color: green; }
+      40% { background-color: cyan; }
+      50% { background-color: blue; }
+      60% { background-color: violet; }
+      70% { background-color: magenta; }
+      80% { background-color: pink; }
+      90% { background-color: white; }
+      100% { background-color: red; } /* Loop back to red */
+    }
+
     .top-text {
+  	font-family: 'Times New Roman', Times, serif; /* Change font family */
       position: absolute;
-      top: 10%; /* Adjust this value to position the text at the desired height */
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 50px;
+      top: 10%; /* Positioning the text 10% from the top */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjusts the text to be perfectly centered */
+      font-size: 25px;
       font-weight: bold;
-      color: #000;
-      text-align: center;
+      color: #fff; /* Text color for visibility */
+      text-align: center; /* Center text alignment */
     }
   </style>
 </head>
@@ -30,3 +51,8 @@
   <div class="top-text">PAKPIK SECRET FILES</div>
 </body>
 </html>
+
+
+
+
+
